@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::post('/trackingAndReport/Event_controller','Event_controller@post_service_reviceive');
-Route::get('/trackingAndReport/Event_controller','Event_controller@post_service_reviceive');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::post('/trackingAndReport/Event_controller','Event_controller@post_service_reviceive');
+// Route::get('/trackingAndReport/Event_controller','Event_controller@post_service_reviceive');
 
+Route::post('/','Event_controller@post_service_reviceive');
+Route::get('/','Event_controller@post_service_reviceive');
